@@ -1,0 +1,59 @@
+.navigation {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 13.5px 0;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:focus {
+    font-weight: 600;
+    text-decoration: underline;
+} 
+
+.logo {
+    padding-left: 4rem;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 4rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding-right: 3rem;
+}
+.auth {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.log-in {
+    padding: 12px 24px;
+    border: 1px solid rgb(29, 30, 28);
+    border-radius: 42px;
+    background: rgb(255, 255, 255);
+}
+
+.sign-up {
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid rgb(29, 30, 28);
+    border-radius: 42px;
+    background: rgb(0, 0, 0);
+}
