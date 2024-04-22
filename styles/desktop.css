@@ -1,29 +1,99 @@
-
-
-body {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: 'Pretendard';
+:root {
+  --font-color: rgb(29, 30, 28);
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Pretendard";
+  color: var(--font-color);
+}
 
 /* hear */
 .section-description {
-    color: rgb(29, 30, 28);
-    font-size: 12px;
-    font-weight: 100;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
+  color: rgb(29, 30, 28);
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 .section-title {
-    color: rgb(29, 30, 28);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
+  color: rgb(29, 30, 28);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.green {
+  background-color: rgb(211, 249, 133);
+}
+
+.gray {
+  background-color: rgb(241, 241, 241);
+}
+
+.blue {
+  background-color: rgb(166, 232, 246);
+}
+
+.pink {
+  background-color: rgb(252, 190, 220);
+}
+
+.orange {
+  background-color: rgb(251, 200, 153);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 24px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.avatar-image {
+  width: 56px;
+  height: 56px;
+}
+
+.quote {
+  width: 296px;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.job {
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
 }
