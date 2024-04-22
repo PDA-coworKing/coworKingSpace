@@ -1,0 +1,30 @@
+:root {
+  --font-color: rgb(29, 30, 28);
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Pretendard";
+  color: var(--font-color);
+}
+
+.section-description {
+  color: rgb(29, 30, 28);
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.section-title {
+  color: rgb(29, 30, 28);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
