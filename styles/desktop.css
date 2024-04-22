@@ -1,9 +1,12 @@
-
+:root {
+    --font-color: rgb(29, 30, 28);
+}
 
 body {
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Pretendard';
+    color: var(--font-color);
 }
 
 /* hear */
