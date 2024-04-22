@@ -6,7 +6,6 @@ body {
     font-family: 'Pretendard';
 }
 
-
 /* hear */
 .section-description {
     color: rgb(29, 30, 28);
@@ -26,4 +25,24 @@ body {
     line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
+}
+
+.green {
+    background-color: rgb(211, 249, 133);
+}
+
+.gray {
+    background-color: rgb(241, 241, 241);
+}
+
+.blue {
+    background-color: rgb(166, 232, 246);
+}
+
+.pink {
+    background-color: rgb(252, 190, 220);
+}
+
+.orange {
+    background-color: rgb(251, 200, 153);
 }
