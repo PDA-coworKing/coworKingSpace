@@ -1,29 +1,124 @@
-
-
-body {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: 'Pretendard';
+:root {
+  --font-color: rgb(29, 30, 28);
 }
-
 
 /* hear */
-.section-description {
-    color: rgb(29, 30, 28);
-    font-size: 12px;
-    font-weight: 100;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
+.card-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  padding-top: 32px;
 }
 
-.section-title {
-    color: rgb(29, 30, 28);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: center;
+.card-container:hover .card {
+  transform: translate(0, 0); /* 변환된 위치를 원래 위치로 되돌림 */
+}
+
+article.card.green:hover,
+article.card.gray:hover,
+article.card.blue:hover,
+article.card.pink:hover,
+article.card.orange:hover {
+  transform: scale(1.1);
+}
+
+.green {
+  height: fit-content;
+  margin-top: 26px;
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: rgb(211, 249, 133);
+  z-index: 300;
+  transform: rotate(-7deg) translateX(70%) translateY(30%);
+  transition: transform 0.3s ease;
+}
+
+.gray {
+  height: fit-content;
+  margin-left: 17px;
+  grid-area: 1 / 3 / 2 / 5;
+  background-color: rgb(241, 241, 241);
+  z-index: 100;
+  transform: rotate(13deg) translateY(10%) translateX(-2%);
+  transition: transform 0.3s ease;
+}
+
+.blue {
+  height: fit-content;
+  margin-top: 58px;
+  grid-area: 1 / 5 / 2 / 7;
+  background-color: rgb(166, 232, 246);
+  z-index: 200;
+  transform: rotate(357deg) translateX(-73%) translateY(8%);
+  transition: transform 0.3s ease;
+}
+
+.pink {
+  height: fit-content;
+  margin-left: 100px;
+  grid-area: 2 / 1 / 3 / 4;
+  background-color: rgb(252, 190, 220);
+  z-index: 500;
+  transform: rotate(13deg) translateX(37%) translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.orange {
+  height: fit-content;
+  margin-top: 28px;
+  margin-right: 300px;
+  grid-area: 2 / 4 / 3 / 7;
+  background-color: rgb(251, 200, 153);
+  z-index: 400;
+  transform: rotate(354deg) translateX(-26%) translateY(-34%);
+  transition: transform 0.3s ease;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 24px;
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.avatar-image {
+  width: 56px;
+  height: 56px;
+}
+
+.quote {
+  width: 296px;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.job {
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
 }

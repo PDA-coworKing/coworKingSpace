@@ -7,39 +7,214 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
     />
+    <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/desktop.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/insights.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="stylesheet"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
+    <link rel="stylesheet" href="./styles/roadmap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <nav></nav>
-    <header></header>
-    <section class="why"></section>
-    <section class="explore"></section>
+    <nav id="nav"></nav>
+    <header id="header"></header>
+    <section id="why"></section>
+    <section id="explore"></section>
     <section class="transformative"></section>
     <section class="hear">
       <div class="section-description">Cowork in Words</div>
       <div class="section-title">Hear It from Our Clients</div>
       <div class="card-container">
-        <article class="card">
-          <div class="avatar-image"></div>
-          <div class="quote"></div>
+        <article class="card green">
+          <div class="avatar-image">
+            <img src="./assets/Liam-Brown.svg" />
+          </div>
+          <div class="quote">
+            "The 24/7 access and secure facilities have been incredibly
+            convenient for my team's flexible schedules. We love the coworking
+            space!"
+          </div>
           <div class="avatar-info">
-            <div class="name"></div>
-            <div class="job"></div>
+            <div class="name">Liam Brown</div>
+            <div class="job">Software Engineer, TechStartup Innovations</div>
+          </div>
+        </article>
+        <article class="card gray">
+          <div class="avatar-image">
+            <img src="./assets/Michael-Rodriguez.svg" />
+          </div>
+          <div class="quote">
+            “The aesthetics of Cowork are inspiring. The attention to detail in
+            the design creates an atmosphere that sparks creativity. It's a
+            place where ideas flow effortlessly, and collaboration happens
+            organically.”
+          </div>
+          <div class="avatar-info">
+            <div class="name">Michael Rodriguez</div>
+            <div class="job">Creative Director, DesignCraft Studio</div>
+          </div>
+        </article>
+        <article class="card blue">
+          <div class="avatar-image">
+            <img src="./assets/Michael-Thompson.svg" />
+          </div>
+          <div class="quote">
+            "As a freelance designer, I was getting tired of working from home
+            or coffee shops. The coworking space has provided me with a
+            productive and professional environment to focus on my work."
+          </div>
+          <div class="avatar-info">
+            <div class="name">Michael Thompson</div>
+            <div class="job">Graphic Designer, DesignCo</div>
+          </div>
+        </article>
+        <article class="card pink">
+          <div class="avatar-image">
+            <img src="./assets/David-Wilson.svg" />
+          </div>
+          <div class="quote">
+            "The coworking space has been a wonderful resource for my team. The
+            open floor plan and dedicated private offices allow us to
+            collaborate and concentrate as needed."
+          </div>
+          <div class="avatar-info">
+            <div class="name">David Wilson</div>
+            <div class="job">Project Manager, SoftwareSolutions LLC</div>
+          </div>
+        </article>
+        <article class="card orange">
+          <div class="avatar-image">
+            <img src="./assets/Alex-Nguyen.svg" />
+          </div>
+          <div class="quote">
+            "The flexible membership options and amenities like high-speed
+            internet, printers, and meeting rooms have made this coworking space
+            a perfect fit for my small business."
+          </div>
+          <div class="avatar-info">
+            <div class="name">Alex Nguyen</div>
+            <div class="job">Marketing Consultant, Maverick Marketing</div>
           </div>
         </article>
       </div>
     </section>
-    <section class="roadmap"></section>
-    <section class="seize"></section>
-    <section class="insights"></section>
-    <footer></footer>
+    <section class="roadmap">
+      <div class="roadmap-heading">
+        <div class="section-description">Frequently Asked Questions</div>
+        <div class="section-title">Your Roadmap to <br />Coworking Clarity</div>
+        <div class="roadmap-info">
+          Frequently asked questions ordered by popularity. Remember <br />that
+          if the visitor has not committed to the call to action, they <br />may
+          still have questions (doubts) that can be answered.
+        </div>
+      </div>
+      <div class="roadmap-qna">
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">
+              How flexible are Cowork's membership plans?
+            </div>
+            <div class="roadmap-info answer">
+              Frequently asked questions ordered by popularity. Remember that if
+              the visitor has not committed to the call to action, they may
+              still have questions (doubts) that can be answered.
+            </div>
+            <div class="divider"></div>
+          </div>
+          <img
+            class="toggle first-toggle"
+            onclick="openToggle()"
+            src="./assets/CaretCircleDown.svg"
+          />
+        </div>
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">
+              What kind of events and networking opportunities does Cowork
+              provide?
+            </div>
+            <div class="divider"></div>
+          </div>
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
+        </div>
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">
+              Can I tour the Cowork space before committing to a membership?
+            </div>
+            <div class="divider"></div>
+          </div>
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
+        </div>
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">
+              Is Cowork suitable for remote teams and distributed workforces?
+            </div>
+            <div class="divider"></div>
+          </div>
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
+        </div>
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">
+              What measures does Cowork take for environmental sustainability?
+            </div>
+            <div class="divider"></div>
+          </div>
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
+        </div>
+        <div class="each-qna">
+          <div class="each-qna-text">
+            <div class="question">Still has questions?</div>
+            <div class="divider"></div>
+          </div>
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
+        </div>
+      </div>
+    </section>
+    <section id="seize"></section>
+    <section id="insights"></section>
+    <footer id="footer"></footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#nav").load("./src/navigation.html");
+        $("#header").load("./src/header.html");
+        $("#why").load("./src/why.html");
+        $("#explore").load("./src/explore.html");
+      });
+      $(document).ready(function () {
+        $("#seize").load("./src/seize.html");
+      });
+      $(document).ready(function () {
+        $("#insights").load("./src/insights.html");
+      });
+      $(document).ready(function () {
+        $("#footer").load("./src/footer.html");
+      });
+      function openToggle() {
+        var element = document.querySelector(".answer");
+        var firstToggle = document.querySelector(".first-toggle");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+          setTimeout(function () {
+            element.style.opacity = "1";
+            firstToggle.style.transform = "rotate(180deg)";
+          }, 50); // 0.05초 후 투명도를 1로 설정하여 페이드 인
+        } else {
+          element.style.display = "none";
+          element.style.opacity = "0";
+          firstToggle.style.transform = "rotate(0deg)";
+        }
+      }
+    </script>
   </body>
 </html>

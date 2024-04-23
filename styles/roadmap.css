@@ -1,0 +1,70 @@
+.roadmap {
+  padding: 7.5rem 4rem;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.roadmap-heading {
+  display: block;
+  padding-right: 10.5rem;
+  width: 35%;
+}
+
+.roadmap .roadmap-heading div {
+  text-align: left;
+}
+
+.roadmap-info {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+
+.roadmap-qna {
+  width: 65%;
+}
+
+.each-qna {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.question {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.divider {
+  background: rgb(29, 30, 28);
+  position: static;
+  width: 136px;
+  height: 1px;
+  margin: 25.5px 0;
+}
+
+.toggle {
+  width: 24px;
+  height: 24px;
+}
+
+.first-toggle {
+  cursor: pointer;
+  transition: rotate 0.5s ease;
+}
+
+.answer {
+  display: none;
+  opacity: 0; /* 초기 투명도 설정 */
+  transition: opacity 0.5s ease; /* 페이드 인/아웃 애니메이션 */
+}
