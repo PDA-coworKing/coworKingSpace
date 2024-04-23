@@ -1,1 +1,75 @@
 /* mobile style css */
+
+@media (max-width: 1280px){
+    
+/* desktop card container invisible */
+.card-slide {
+    overflow: hidden;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.card-container {
+    all:initial;
+    display: flex;
+}
+
+.card {
+    all:initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 24px;
+    width: 360px;
+    box-sizing: border-box;
+}
+
+article.card.green:hover,
+article.card.gray:hover,
+article.card.blue:hover,
+article.card.pink:hover,
+article.card.orange:hover {
+  transform: scale(1);
+}
+  
+.green {
+    background-color: rgb(211, 249, 133);
+    height: fit-content;
+}
+
+.gray {
+    background-color: rgb(241, 241, 241);
+    height: fit-content;
+}
+
+.blue {
+    background-color: rgb(166, 232, 246);
+    height: fit-content;
+}
+
+.pink {
+    background-color: rgb(252, 190, 220);
+    height: fit-content;
+}
+
+.orange {
+    background-color: rgb(251, 200, 153);
+    height: fit-content;
+}
+
+.card-arrow-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+.card-arrow-button:hover {
+    cursor: pointer;
+}
+
+}

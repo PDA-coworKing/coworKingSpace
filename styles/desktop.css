@@ -4,6 +4,7 @@
 
 /* hear */
 .card-container {
+  width: 100%;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(6, 1fr);
@@ -14,6 +15,10 @@
 
 .card-container:hover .card {
   transform: translate(0, 0); /* 변환된 위치를 원래 위치로 되돌림 */
+}
+
+.card-arrow-button {
+  display: none;
 }
 
 article.card.green:hover,
