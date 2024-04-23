@@ -54,7 +54,14 @@
     width: 50%;
 }
 
-.header-logos {
-    
+.logo-container {
+    display: flex;
+    flex-direction: column;
     padding: 80px 64px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
