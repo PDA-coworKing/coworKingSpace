@@ -1,12 +1,17 @@
 .navigation {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
     height: fit-content;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-sizing: border-box;
     padding: 13.5px 0;
+    z-index: 1000;
 }
 
 .menu a {
@@ -48,6 +53,13 @@
     border: 1px solid rgb(29, 30, 28);
     border-radius: 42px;
     background: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.log-in:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .sign-up {
@@ -56,4 +68,11 @@
     border: 1px solid rgb(29, 30, 28);
     border-radius: 42px;
     background: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover  {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
