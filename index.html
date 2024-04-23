@@ -178,13 +178,16 @@
         </div>
       </div>
     </section>
-    <section class="seize"></section>
+    <section id="seize"></section>
     <section class="insights"></section>
     <footer></footer>
 
     <script>
       $(document).ready(function () {
         $("#nav").load("./src/navigation.html");
+      });
+      $(document).ready(function () {
+        $("#seize").load("./src/seize.html");
       });
       function openToggle() {
         var element = document.querySelector(".answer");
