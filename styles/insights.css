@@ -1,0 +1,115 @@
+.insights {
+  padding: 7.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insights-title {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.insights-rectangle {
+  position: relative;
+  top: 12px;
+}
+
+.insights-info {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 24px 0 80px;
+}
+
+.articles {
+  gap: 2rem;
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.tag-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 16px 0 ;
+}
+
+.tag {
+  width: 69px;
+  height: 29px;
+  padding: 8px;
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.tag-blue {
+  border-radius: 8px;
+  background: rgb(166, 232, 246);
+}
+
+.tag-pink {
+  border-radius: 8px;
+  background: rgb(252, 190, 220);
+}
+
+.tag-green {
+  border-radius: 8px;
+  background: rgb(211, 249, 133);
+}
+
+.min-info {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+
+.article-title {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.readmore-box {
+  display: flex;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.insightsBtn {
+  padding: 12px 24px;
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+  background: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Pretendard";
+}
+
+.insightsBtn:hover {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
