@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/desktop.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/insights.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -179,7 +180,7 @@
       </div>
     </section>
     <section id="seize"></section>
-    <section class="insights"></section>
+    <section id="insights"></section>
     <footer></footer>
 
     <script>
@@ -191,6 +192,9 @@
       });
       $(document).ready(function () {
         $("#seize").load("./src/seize.html");
+      });
+      $(document).ready(function () {
+        $("#insights").load("./src/insights.html");
       });
       function openToggle() {
         var element = document.querySelector(".answer");
