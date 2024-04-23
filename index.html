@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
     <link rel="stylesheet" href="./styles/roadmap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       function openToggle() {
         var element = document.querySelector(".answer");
@@ -37,7 +38,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav></nav>
+    <nav id="nav"></nav>
     <header></header>
     <section class="why"></section>
     <section class="explore"></section>
@@ -197,5 +198,11 @@
     <section class="seize"></section>
     <section class="insights"></section>
     <footer></footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#nav").load("./src/navigation.html");
+      });
+    </script>
   </body>
 </html>
