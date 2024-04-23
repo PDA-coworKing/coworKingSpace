@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.article-img {
+    width: 100%;
+}
+
 .insights-rectangle {
   position: relative;
   top: 12px;
