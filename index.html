@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/desktop.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
     <link rel="stylesheet" href="./styles/insights.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -195,7 +196,7 @@
     </section>
     <section id="seize"></section>
     <section id="insights"></section>
-    <footer></footer>
+    <footer id="footer"></footer>
 
     <script>
       $(document).ready(function () {
@@ -210,6 +211,9 @@
       });
       $(document).ready(function () {
         $("#insights").load("./src/insights.html");
+      });
+      $(document).ready(function () {
+        $("#footer").load("./src/footer.html");
       });
       function openToggle() {
         var element = document.querySelector(".answer");
