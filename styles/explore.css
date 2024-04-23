@@ -1,0 +1,65 @@
+.explore{
+    padding: 112px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.explore-title {
+    color: rgb(29, 30, 28);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.explore-info {
+    color: rgb(29, 30, 28);
+    font-family: Pretendard;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.explore-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 100;
+    padding: 12px 24px;
+    margin: 40px auto 0;
+    border: 1px solid rgb(29, 30, 28);
+    border-radius: 42px;
+    background: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.explore-video-container {
+    width: 100%;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.explore-video {
+    width: 100%;
+    border-radius: 3rem;
+    display: block;
+}
