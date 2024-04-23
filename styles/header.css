@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7rem 4rem;
+}
+
+.title-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url('/assets/TitleCircle.svg');
+    background-repeat: no-repeat;
+    background-position: 72% 51%
+}
+
+.header-title {
+    color: rgb(29, 30, 28);
+    font-size: 6rem;
+    font-weight: 700;
+
+}
+
+.header-description {
+    width: 75%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+
+
+.claim-button {
+    width: fit-content;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 150%;
+    padding: 12px 24px;
+    border: 1px solid rgb(29, 30, 28);
+    border-radius: 42px;
+    background: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.claim-button:hover  {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.header-logos {
+    
+    padding: 80px 64px;
+}
