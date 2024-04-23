@@ -16,7 +16,7 @@
 }
 
 .article-img {
-    width: 100%;
+  width: 100%;
 }
 
 .insights-rectangle {
@@ -41,11 +41,19 @@
   padding-bottom: 4rem;
 }
 
+article {
+  transition: 0.5s ease;
+}
+
+article:hover {
+  transform: scale(1.1);
+}
+
 .tag-container {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin: 16px 0 ;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 16px 0;
 }
 
 .tag {
