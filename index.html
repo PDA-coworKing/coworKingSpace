@@ -18,23 +18,6 @@
     />
     <link rel="stylesheet" href="./styles/roadmap.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      function openToggle() {
-        var element = document.querySelector(".answer");
-        var firstToggle = document.querySelector(".first-toggle");
-        if (element.style.display === "none") {
-          element.style.display = "block";
-          setTimeout(function () {
-            element.style.opacity = "1";
-            firstToggle.style.transform = "rotate(180deg)";
-          }, 50); // 0.05초 후 투명도를 1로 설정하여 페이드 인
-        } else {
-          element.style.display = "none";
-          element.style.opacity = "0";
-          firstToggle.style.transform = "rotate(0deg)";
-        }
-      }
-    </script>
     <title>Document</title>
   </head>
   <body>
@@ -203,6 +186,21 @@
       $(document).ready(function () {
         $("#nav").load("./src/navigation.html");
       });
+      function openToggle() {
+        var element = document.querySelector(".answer");
+        var firstToggle = document.querySelector(".first-toggle");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+          setTimeout(function () {
+            element.style.opacity = "1";
+            firstToggle.style.transform = "rotate(180deg)";
+          }, 50); // 0.05초 후 투명도를 1로 설정하여 페이드 인
+        } else {
+          element.style.display = "none";
+          element.style.opacity = "0";
+          firstToggle.style.transform = "rotate(0deg)";
+        }
+      }
     </script>
   </body>
 </html>
