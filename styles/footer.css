@@ -10,7 +10,7 @@
 }
 
 .news-letter {
-    width: 40%;
+  width: 40%;
 }
 
 .email-info {
@@ -24,24 +24,38 @@
   padding: 32px 0 24px;
 }
 
+.enter-email {
+  display: flex;
+  gap: 24px;
+}
+
+input {
+  background-color: rgb(29, 30, 28);
+  width: 75%;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 12px;
+}
+
 .subscribe-botton {
-    padding: 12px 24px;
-    border: 1px solid rgb(29, 30, 28);
-    border-radius: 42px;
-    background: rgb(255, 255, 255);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 100;
-    font-family: "Pretendard";
-  }
-  
-  .subscribe-botton:hover {
-    color: white;
-    background-color: rgb(29, 30, 28);
-    border-color: white;
-  }
-  
+  padding: 12px 24px;
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+  background: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Pretendard";
+}
+
+.subscribe-botton:hover {
+  color: white;
+  background-color: rgb(29, 30, 28);
+  border-color: white;
+}
 
 .option-list {
   display: flex;
@@ -49,7 +63,7 @@
   justify-content: space-evenly;
 }
 
-.category {
+.column.category {
   color: rgb(255, 255, 255);
   font-family: Pretendard;
   font-size: 12px;
@@ -58,6 +72,23 @@
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.column div:first-child {
+    color: rgb(255, 255, 255);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .column div {
