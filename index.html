@@ -119,9 +119,18 @@
             <div class="question">
               How flexible are Cowork's membership plans?
             </div>
+            <div class="roadmap-info answer">
+              Frequently asked questions ordered by popularity. Remember that if
+              the visitor has not committed to the call to action, they may
+              still have questions (doubts) that can be answered.
+            </div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img
+            class="toggle first-toggle"
+            onclick="openToggle()"
+            src="./assets/CaretCircleDown.svg"
+          />
         </div>
         <div class="each-qna">
           <div class="each-qna-text">
@@ -131,7 +140,7 @@
             </div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
         </div>
         <div class="each-qna">
           <div class="each-qna-text">
@@ -140,7 +149,7 @@
             </div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
         </div>
         <div class="each-qna">
           <div class="each-qna-text">
@@ -149,7 +158,7 @@
             </div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
         </div>
         <div class="each-qna">
           <div class="each-qna-text">
@@ -158,18 +167,18 @@
             </div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
         </div>
         <div class="each-qna">
           <div class="each-qna-text">
             <div class="question">Still has questions?</div>
             <div class="divider"></div>
           </div>
-          <img src="./assets/CaretCircleDown.svg" />
+          <img class="toggle" src="./assets/CaretCircleDown.svg" />
         </div>
       </div>
     </section>
-    <section class="seize"></section>
+    <section id="seize"></section>
     <section class="insights"></section>
     <footer></footer>
 
@@ -177,6 +186,24 @@
       $(document).ready(function () {
         $("#nav").load("./src/navigation.html");
       });
+      $(document).ready(function () {
+        $("#seize").load("./src/seize.html");
+      });
+      function openToggle() {
+        var element = document.querySelector(".answer");
+        var firstToggle = document.querySelector(".first-toggle");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+          setTimeout(function () {
+            element.style.opacity = "1";
+            firstToggle.style.transform = "rotate(180deg)";
+          }, 50); // 0.05초 후 투명도를 1로 설정하여 페이드 인
+        } else {
+          element.style.display = "none";
+          element.style.opacity = "0";
+          firstToggle.style.transform = "rotate(0deg)";
+        }
+      }
     </script>
   </body>
 </html>
