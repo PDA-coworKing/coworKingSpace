@@ -1,0 +1,50 @@
+.seize {
+  padding: 7.5rem 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.seizeTitle {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.seize-rectangle {
+  position: relative;
+  top: 12px;
+}
+
+.seize-info {
+  color: rgb(29, 30, 28);
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.claimBtn {
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border: 1px solid rgb(29, 30, 28);
+  border-radius: 42px;
+  background: rgb(29, 30, 28);
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Pretendard";
+  margin: 40px auto 0;
+}
+
+.claimBtn:hover {
+  color: rgb(29, 30, 28);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
